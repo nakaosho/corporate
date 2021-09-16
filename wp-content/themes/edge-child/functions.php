@@ -3,6 +3,16 @@ add_action( 'wp_enqueue_scripts', 'edge_enqueue_styles' );
 function edge_enqueue_styles() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/scss/style.css', array('parent-style'));
+    
+
+    //親テーマのjquery.fullPage.css
+    wp_enqueue_style( 'fullPage-style', get_template_directory_uri() . '/css/jquery.fullPage.css' );
+
+    //親テーマのjquery-2.1.4.min
+    wp_enqueue_script( 'jquery-2.1.4.min', get_template_directory_uri() . '/js/jquery-2.1.4.min.js' );
+    
+    //親テーマのjquery.fullPage.js
+    wp_enqueue_script( 'fullPage', get_template_directory_uri() . '/js/jquery.fullPage.min.js' );
 
     //親テーマのfunctions.js
     wp_enqueue_script( 'functions', get_template_directory_uri() . '/js/common.js' );

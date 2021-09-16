@@ -6,7 +6,10 @@ $edge_settings = edge_get_theme_options(); ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
 <?php wp_head(); ?>
+
+
 </head>
 
 
@@ -73,9 +76,41 @@ $edge_settings = edge_get_theme_options(); ?>
 ?>	
 
 
+<div class="flex-container">
+
+  <div id="side-bar">
+    <div id="header-bar" class="hidden-pc">
+      <div id="navToggle">
+        <div> <span></span> <span></span> <span></span> </div>
+      </div>
+      <nav  id="slide_menu" class="accordion_nav">
+        <ul>
+      <li><a href="#section1">Section1</a></li>
+          <li><a href="#section2">Section2</a></li>
+          <li><a href="#section3">Section3</a></li>
+          <li><a href="#section4">Section4</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>  
 
 
-<footer id="colophon" class="site-footer clearfix">
+
+  <div id="fullpage">
+    <section class="section sec1">
+      <h2>Section1</h2>
+    </section>
+
+    <section class="section sec2">
+      <h2>Section2</h2>
+    </section>
+
+    <section class="section sec3">
+      <h2>Section3</h2>
+    </section>
+
+    <section class="section sec4">
+      <footer id="colophon" class="site-footer clearfix">
 <?php
 if ( is_front_page() && is_home() ) {
 	if ((function_exists('display_instagram')) && $edge_settings['edge_instagram_feed_display'] !=0){
@@ -157,6 +192,14 @@ $footer_column = $edge_settings['edge_footer_column_section'];
 	<div class="go-to-top"><a title="<?php esc_html_e('Go to Top','edge');?>" href="#masthead"><i class="fa fa-angle-double-up"></i></a></div> <!-- end .go-to-top -->
 	<?php endif; ?>
 </footer> <!-- end #colophon -->
+    </section>
+
+  </div>
+
+</div><!-- //flex-container -->
+
+
+
 </div> <!-- end #page -->
 <?php wp_footer(); ?>
 </body>
