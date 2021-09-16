@@ -1,0 +1,420 @@
+/* Global
+------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+/* Base */
+
+body {
+    color: #444;
+    font-family: 'Noto Sans JP', sans-serif;
+    //font-family: 'M PLUS Rounded 1c', sans-serif;
+    //  font-family: '游ゴシック', 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'ヒラギノ角ゴ W3', 'メイリオ', 'ＭＳ Ｐゴシック', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+body:lang(ja) {
+    // font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+    //font-family: 'M PLUS Rounded 1c', sans-serif !important;
+    font-family: 'Noto Sans JP', sans-serif !important;
+}
+
+ ::selection {
+    background-color: #def;
+}
+
+@media screen and (min-width: 782px) {
+    body {
+        font-size: 19px;
+    }
+    body:lang(ja) {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    body {
+        font-size: 20px;
+    }
+    body:lang(ja) {
+        font-size: 17px;
+    }
+}
+
+
+/* Heading */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+    clear: both;
+    color: #111;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5em;
+    margin-top: 3em;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    margin-top: 2.5em;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+h5 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+h6 {
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+
+/* Link */
+
+a {
+    color: #4693f5;
+    text-decoration: underline;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+}
+
+a:hover {
+    //  color: #639af6;
+}
+
+cite a,
+cite a {
+    text-decoration: none;
+}
+
+
+/* Text */
+
+p {
+    margin: 0 0 1.8em;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn,
+em,
+i {
+    font-style: italic;
+}
+
+q {
+    quotes: "" "";
+}
+
+cite {
+    border-bottom: dotted 1px #999;
+    font-style: normal;
+}
+
+code,
+kbd,
+tt,
+var {
+    background-color: #f4f5f6;
+    color: #666;
+    font-family: "Noto Sans JP", Consolas, monospace;
+    font-size: 90%;
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted #999;
+    cursor: help;
+}
+
+mark,
+ins {
+    background: linear-gradient( transparent 70%, #ffff66 70%);
+    text-decoration: none;
+}
+
+ins.adsbygoogle {
+    background-color: transparent;
+}
+
+
+/* List */
+
+ul,
+ol {
+    margin: 0 0 1.8em 1.5em;
+    padding: 0;
+}
+
+li>ul,
+li>ol {
+    margin-bottom: 0;
+}
+
+dl {
+    margin: 0;
+}
+
+dt {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+dd {
+    margin: 0 0 1.8em 1.5em;
+}
+
+
+/* Table */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 90%;
+    margin: 0 0 1.8em;
+    width: 100%;
+}
+
+caption {
+    margin-bottom: 0.6em;
+}
+
+table th,
+table td {
+    border: solid 1px #eee;
+    padding: 1em 1.2em;
+}
+
+th {
+    background-color: #f4f5f6;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* Elements */
+
+blockquote {
+    color: #666;
+    margin: 0 0 2em;
+    padding: 12px 0 0 44px !important;
+    position: relative;
+}
+
+blockquote:before {
+    color: #ddd;
+    content: "\201C";
+    font-family: Georgia, serif;
+    font-size: 84px;
+    left: -5px;
+    line-height: 1;
+    position: absolute;
+    top: -5px;
+}
+
+blockquote p {
+    margin-bottom: 0.8em;
+}
+
+blockquote cite {
+    font-size: 90%;
+}
+
+address {
+    margin: 0 0 1.8em;
+    font-style: normal;
+}
+
+pre {
+    background-color: #f4f5f6;
+    color: #666;
+    font-family: "Noto Sans JP", Consolas, monospace;
+    font-size: 90%;
+    line-height: 1.4;
+    margin: 0 0 1.7em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.5em;
+    word-wrap: normal;
+}
+
+hr {
+    background-color: #eee;
+    border: 0;
+    height: 2px;
+    margin: 1.8em auto;
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+    max-width: 100px;
+}
+
+
+/* Media */
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+figure {
+    margin: 0;
+}
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+
+/* Form */
+
+button,
+input,
+input[type="search"],
+select,
+textarea {
+    background-color: #fff;
+    box-sizing: border-box;
+    line-height: 1.6;
+    max-width: 100%;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 90%;
+    line-height: 1;
+    padding: 1.1em 1.5em;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+    border: solid 1px #e6e6e6;
+    color: #333;
+    margin-top: 0.6em;
+    padding: 0.6em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+    color: #444;
+}
+
+input[type="file"] {
+    margin-top: 0.6em;
+}
+
+select {
+    border: solid 1px #e6e6e6;
+    margin-top: 0.6em;
+    padding: 0.6em;
+}
+
+textarea {
+    max-width: 720px;
+    width: 100%;
+}
+
+input[type="tel"] {
+    direction: ltr;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+textarea::placeholder {
+    color: #ccc;
+}
+
+
+/* navi */
+
+.sub_img:before {
+    background: #fff !important;
+}
+
+.sub_menu a {
+    color: #000 !important;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    display: inline-block;
+    padding: 6px 0;
+}
