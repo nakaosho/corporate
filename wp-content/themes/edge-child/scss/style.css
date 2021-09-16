@@ -422,10 +422,6 @@ textarea::placeholder {
   padding: 6px 0;
 }
 
-.elementor-heading-title {
-  color: red !important;
-}
-
 .line_button_on span {
   -webkit-animation: line_button_on0 .75s ease-in-out forwards;
           animation: line_button_on0 .75s ease-in-out forwards;
