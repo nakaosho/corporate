@@ -89,6 +89,7 @@ $edge_settings = edge_get_theme_options(); ?>
           <li><a href="#section2">Section2</a></li>
           <li><a href="#section3">Section3</a></li>
           <li><a href="#section4">Section4</a></li>
+		  <li><a href="#section4">Section5</a></li>
         </ul>
       </nav>
     </div>
@@ -98,18 +99,43 @@ $edge_settings = edge_get_theme_options(); ?>
 
   <div id="fullpage">
     <section class="section sec1">
-      <h2>Section1</h2>
+    	<div class="container1">
+			<h2>陰ながらビジネスを支える</h2>
+			<h2>パートナーカンパニーとして。</h2>
+			<h3>Techtrage Co.,Ltd</h3>
+		</div>
     </section>
 
     <section class="section sec2">
-      <h2>Section2</h2>
+    	<div class="container2">
+			<h2><span class="color_FFA830">C</span>OMPANY<span class="sub_title"><?php $page_obj = get_page_by_path('company');
+				  $page = get_post( $page_obj );echo $page->post_title;?></span></h2>
+				
+		  
+			<h4>彼を知れば、百戦殆うからず。</h4>
+			<p>わたしたちは常にあなたのパートナーであり続けますが、</p>
+			<p>まずは仕事へのポリシーをぜひ知っていてください。</p>
+			<p>そうすれば、いつでも気軽にビジネストークができるはずです。</p>
+			<p class="link_company"><a>VIEW MORE</a></p>
+		</div>
     </section>
 
     <section class="section sec3">
-      <h2>Section3</h2>
+      <h2>SERVICE</h2>
+	  <p>新鮮な提案を最速でお届け。</p>
+	  <p>活きの良いアイデアは、美味しいうちに料理しなければなりません。</p>
+	  <p>ビジネスにおいても鮮度は命なのです。</p>
     </section>
 
-    <section class="section sec4">
+	<section class="section sec4">
+      <h2>RECRUIT</h2>
+	  <p>一緒に働く仲間を歓迎します。</p>
+	  <p>あなたの人生の1ページにふさわしい企業となれるよう</p>
+	  <p>常に成長を見据え、共に歩める仲間を募集しています。</p>
+	  <p>エントリーの扉を叩いてみてください。</p>
+    </section>
+
+    <section class="section sec5">
       <footer id="colophon" class="site-footer clearfix">
 <?php
 if ( is_front_page() && is_home() ) {

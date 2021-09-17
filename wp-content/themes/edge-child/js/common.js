@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
-    anchors:['section1', 'section2', 'section3', 'section4'],
+    anchors:['section1', 'section2', 'section3', 'section4', 'section5'],
     menu: '#slide_menu',
       navigation: true,
       navigationPosition : 'right'
