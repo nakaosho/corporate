@@ -1,0 +1,124 @@
+
+#menu-test{
+    .sub-menu{
+       display: block;
+    }
+ }
+ 
+
+
+//TOPページ新着記事一覧
+
+.new_selected_Ctr{
+
+    display: flex;
+ 
+    ul.new_selected{
+ 
+       font-size: 0.8rem;
+       margin: 20px 0px;
+       flex-basis: 70%;
+    
+       li{
+          
+          padding: 5px 0px;
+          border-bottom: 1px solid#faa830;
+          position: relative;
+    
+          a{
+             text-decoration: none;
+          }
+    
+          .new_date{
+             font-weight: bold;
+             display: inline-block;
+             width: 110px;
+             
+    
+          }
+    
+          .new_title{
+             color: #faa830;
+             padding: 0px 20px;
+          }
+    
+          .new_txt{
+             
+          }
+ 
+ 
+       }
+ 
+       li:after{
+          border-bottom: 1px solid#ccc;
+          position: absolute;
+          content: " ";
+          display: block;
+          bottom: -1px;
+          width: 97%;
+       }
+    
+    }
+ 
+    .new_selected_btn{
+       flex-basis: 20%;
+       display: flex;
+       align-items: end;
+       justify-content: flex-end;
+       margin: 0px 0px 20px;
+       
+ 
+       a{
+          display: block;
+          width: 220px;
+          border: 1px solid;
+          text-align: center;
+          height: 80px;
+          line-height: 80px;
+          color: #333;
+       }
+ 
+       /*矢印が右に移動する*/
+       .arrow{
+          position: relative;
+          display: inline-block;
+          padding: 0 20px;
+          color: #333;
+          text-decoration: none;
+          outline: none;
+       }
+ 
+       /*矢印と下線の形状*/
+       .arrow::before{
+          content: '';
+          position: absolute;
+          bottom: 20px;
+          left: 8%;
+          width: 85%;
+          height: 1px;
+          background: #333;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+       }
+ 
+       .arrow::after{
+          content: '';
+          position: absolute;
+          bottom: 25px;
+          right: 15px;
+          width: 15px;
+          height: 1px;
+          background: #333;
+          -webkit-transform: rotate(
+       35deg);
+          transform: rotate(
+       35deg);
+          -webkit-transition: all .3s;
+          transition: all .3s;
+       }
+ 
+ 
+    }
+ 
+ }
+ 
